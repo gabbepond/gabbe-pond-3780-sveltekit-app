@@ -1,3 +1,9 @@
+<script>
+    import { onMount } from 'svelte';
+    onMount(() => {
+        console.log('mounted');
+    });
+</script>
 <div class="container h-screen mx-auto flex justify-center items-center">
     <div class="space-y-10 flex flex-col items-center">
         <h2 class="text-2xl">Welcome to Gab's SvelteKit App!</h2>
