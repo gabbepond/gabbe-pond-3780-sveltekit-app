@@ -15,8 +15,8 @@
 	"devDependencies": {
 		"@eslint/compat": "^1.2.3",
 		"@eslint/js": "^9.17.0",
-		"@sveltejs/adapter-vercel": "^5.5.0",
-		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/adapter-vercel": "^0.0.3",
+		"@sveltejs/kit": "^2.16.1",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"autoprefixer": "^10.4.20",
 		"eslint": "^9.7.0",
@@ -34,6 +34,7 @@
 		"vite": "^5.4.11"
 	},
 	"dependencies": {
+		"@kinde-oss/kinde-auth-sveltekit": "^2.1.0",
 		"@tailwindcss/forms": "^0.5.9",
 		"@tailwindcss/typography": "^0.5.15"
 	}
