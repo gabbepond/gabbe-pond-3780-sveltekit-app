@@ -1,6 +1,10 @@
 <script lang="ts">
 	import '../app.css';
-	let { children } = $props();
+	import type { PageData } from './$types'
+
+	const { data, children } = $props<{ data: PageData, children: any }>();
+
+	//let { children } = $props();
 </script>
 
 {@render children()}
