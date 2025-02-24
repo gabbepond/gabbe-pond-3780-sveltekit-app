@@ -1,27 +1,24 @@
-import { MongoClient, ServerApiVersion } from 'mongodb'
+import { MongoClient, ServerApiVersion } from 'mongodb';
 
 if (!process.env.MONGODB_URI) {
-  throw new Error('Please define the MONGODB_URI environment variable inside .env.local')
+  throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
 }
 
-const mongoURI = process.env.MONGODB_URI
-let clientPromise: Promise<MongoClient> | undefined
+const mongoURI = process.env.MONGODB_URI;
 
-try {
-    const client = new MongoClient(mongoURI, {
-        serverApi: {
-            version: ServerApiVersion.v1,
-            strict: true,
-            deprecationErrors: true,
-        },
-    })
-    clientPromise = client.connect().catch(error => {
-        console.error('MongoDB connection error:', error)
-        throw error
-    })
+const client = new MongoClient(mongoURI, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
 
-} catch (error) {
-    console.error('MongoDB connection error:', error)
-}
+let clientPromise: Promise<MongoClient> | null = null;
 
-export default clientPromise
+export const initMongoDB = async (): Promise<MongoClient> => {
+  if (!clientPromise) {
+    clientPromise = client.connect();
+  }
+  return clientPromise;
+};
