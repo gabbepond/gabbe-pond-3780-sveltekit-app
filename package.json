@@ -38,8 +38,8 @@
 	},
 	"dependencies": {
 		"@kinde-oss/kinde-auth-sveltekit": "^2.1.0",
-		"@tailwindcss/forms": "^0.5.9",
-		"@tailwindcss/typography": "^0.5.15",
+		"@tailwindcss/forms": "^0.5.10",
+		"@tailwindcss/typography": "^0.5.16",
 		"dotenv": "^16.4.7",
 		"mongodb": "^6.12.0"
 	}
