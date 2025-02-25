@@ -1,4 +1,8 @@
 import type { PageServerLoad } from './$types';
+
+interface Locals {
+	mongoClient: any;
+}
 import { redirect } from '@sveltejs/kit';
 
 let client
