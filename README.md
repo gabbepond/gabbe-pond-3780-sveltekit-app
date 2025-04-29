@@ -1,4 +1,4 @@
-## Check out my app Live click the link below.
+## Check out my app Live click the link below to check out "GABBEVERSE APP".
 {https://my-latest-sveltekit-3780.vercel.app/}
 
 
@@ -11,7 +11,7 @@
 
 {[https://my-latest-sveltekit-3780.vercel.app/](https://my-latest-sveltekit-3780.vercel.app/airbnb)}
 
-## I created a cool sales route
+## I created a cool Sales route
 
 
 {[https://my-latest-sveltekit-3780.vercel.app/](https://my-latest-sveltekit-3780.vercel.app/sales)}
